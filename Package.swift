@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "BitcoinCashKit",
             dependencies: [
-                .product(name: "BitcoinCore", package: "BitcoinCore.Swift"),
+                .product(name: "BitcoinCore", package: "BitcoinCore"),
             ]
         ),
     ]
