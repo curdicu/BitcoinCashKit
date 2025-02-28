@@ -14,13 +14,13 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/curdicu/BitcoinCore.git", .branch("main")),
+        .package(url: "https://github.com/horizontalsystems/BitcoinCore.Swift.git", .upToNextMajor(from: "3.0.0")),
     ],
     targets: [
         .target(
             name: "BitcoinCashKit",
             dependencies: [
-                .product(name: "BitcoinCore", package: "BitcoinCore"),
+                .product(name: "BitcoinCore", package: "BitcoinCore.Swift"),
             ]
         ),
     ]
